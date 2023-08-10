@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* padding: 10px;
+    border: red 2px sol; */
+}
+
+.frame{
+    display: flex;
+    background: linear-gradient(10deg, #0a0a0a, #3a4452);
+    padding: 20px;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h4{
+    font-weight: 800;
+    color: white;
+    
+    user-select: none;
+    cursor: default;
+   
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    /* background: transparent; */
+    background: linear-gradient(10deg, #0a0a0a, #3a4452);
+    border-radius: 30px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+.form input{
+    width: 45vw;
+    height: 27px;
+   
+    border-radius: 20px;
+   
+    border: 0px;
+    padding: 2px 10px;
+    
+    font-size: larger;
+    
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 4);
+    
+    
+}
+.form button{
+    
+    height: 27px;
+    margin: 25px;
+    width: 80px;
+    background-color: rgba(0, 255, 72, 0.874);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+.main-container{
+
+    display: flex;
+    align-items: center;
+
+    background-color: grey;
+    width: 100%;
+   
+
+}
+
+ .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+    background: transparent;
+    /* border-radius: 30px; */
+    background: linear-gradient(10deg, #0a0a0a, #3a4452);
+    box-shadow: 0px 3px 15px rgba(46, 75, 132, 0.5);
+    padding: 10px; 
+    /* margin: 15px 10px; */
+    width: 100%;
+
+    
+} 
+
+.list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-radius: 30px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    width: 80%;
+    padding: 10px;
+    /* min-height: 200px; */
+    margin: 10px 10px;
+}
+.list li p{
+    width: 60vw;
+    color: white;
+
+}
+
+.help-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    /* margin: 2px; */
+    
+
+}
+
+.help-button button{
+    padding: 3px;
+    /* margin: 2px; */
+}
+
+.line-cut{
+    text-decoration: line-through;
+    
+
+}
+/* it means li jo ki forst child ho */
+li:first-child .help-button .up-btn{
+    visibility: hidden;
+}
+li:last-child .help-button .down-btn{
+    visibility: hidden;
+}
+
